@@ -1,6 +1,5 @@
 package Level1.Ex1;
 
-import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class Book implements Comparable<Book> {
@@ -8,7 +7,7 @@ public class Book implements Comparable<Book> {
     private int quantity;
 
     public Book(String name) {
-        if(name == null) throw new NoSuchElementException("Provide a name for the book");
+        if(name == null) throw new IllegalArgumentException("Provide a name for the book");
 
         this.name = name;
         quantity = 1;
