@@ -41,6 +41,10 @@ public class Book implements Comparable<Book> {
         return name.equalsIgnoreCase(o.name);
     }
 
+    void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(name.toLowerCase());
